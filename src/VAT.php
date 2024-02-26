@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-namespace OverSkill-Team\FinancialTools;
+namespace OverSkillTeam\FinancialTools;
 
 use InvalidArgumentException;
+use JsonSerializable;
 
-enum VAT implements \JsonSerializable
+enum VAT implements JsonSerializable
 {
     case NON_ASSUJETTI;
     case ZERO_PERCENT;
