@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace OverSkillTeam\FinancialTools;
 
-use App\Utility\Core\Exception\AmbiguityException;
+use OverSkillTeam\FinancialTools\Exception\AmbiguityException;
 use Illuminate\Contracts\Support\Arrayable;
 use InvalidArgumentException;
 use JsonSerializable;

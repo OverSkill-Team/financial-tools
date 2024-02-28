@@ -61,7 +61,7 @@ readonly class Rate implements JsonSerializable, Stringable
 
     public function __toString(): string
     {
-        return (string) format_number_by_type($this->rate, 'rate_to_percentage', 2, true);
+        return (string) $this->rate*100 . '%';
     }
 
     public function jsonSerialize(): float

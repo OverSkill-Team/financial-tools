@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace namespace OverSkillTeam\FinancialTools\Exception;
+namespace OverSkillTeam\FinancialTools\Exception;
 
 use LogicException;
 
