@@ -5,5 +5,6 @@ Financial classes and utilities
 ## How to test
 
 ```
-./vendor/phpunit/phpunit/phpunit  ./tests
+% ./vendor/phpstan/phpstan/phpstan
+% ./vendor/phpunit/phpunit/phpunit  ./tests
 ```
