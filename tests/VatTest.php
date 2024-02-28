@@ -2,8 +2,7 @@
 
 declare(strict_types=1);
 
-
-namespace OverSkillTeam\FinancialTools\Tests\VAT;
+namespace OverSkillTeam\FinancialTools\Tests;
 
 use OverSkillTeam\FinancialTools\VAT;
 use PHPUnit\Framework\Attributes\DataProvider;
