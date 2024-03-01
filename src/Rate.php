@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OverSkillTeam\FinancialTools;
+namespace OverSkill\FinancialTools;
 
 use JsonSerializable;
 use Stringable;

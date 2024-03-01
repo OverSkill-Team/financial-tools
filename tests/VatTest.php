@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace OverSkillTeam\FinancialTools\Tests;
+namespace OverSkill\FinancialTools\Tests;
 
-use OverSkillTeam\FinancialTools\VAT;
+use OverSkill\FinancialTools\VAT;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;

@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace OverSkillTeam\FinancialTools;
+namespace OverSkill\FinancialTools;
 
-use OverSkillTeam\FinancialTools\Exception\AmbiguityException;
+use OverSkill\FinancialTools\Exception\AmbiguityException;
 use Illuminate\Contracts\Support\Arrayable;
 use InvalidArgumentException;
 use JsonSerializable;
 
-class Amount implements Arrayable, JsonSerializable
+readonly class Amount implements Arrayable, JsonSerializable
 {
     private const ROUND_DECIMALS = 2;
 
     private function __construct(
-        private readonly float $amountExcludingVat,
-        private readonly VAT $vat,
+        private float $amountExcludingVat,
+        private VAT $vat,
     ) {
         if ($this->amountExcludingVat < 0) {
             throw new InvalidArgumentException('Amount can not be lower than zero');

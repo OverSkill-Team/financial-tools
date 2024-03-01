@@ -1,5 +1,5 @@
 {
-    "name": "overskill-team/financial-tools",
+    "name": "overskill/financial-tools",
     "description": "Financial tools and libraries",
     "type": "library",
     "keywords": [
@@ -18,12 +18,12 @@
     },
     "autoload": {
         "psr-4": {
-            "OverSkillTeam\\FinancialTools\\": "src/"
+            "OverSkill\\FinancialTools\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "OverSkillTeam\\FinancialTools\\Tests\\": "tests/"
+            "OverSkill\\FinancialTools\\Tests\\": "tests/"
         }
     },
     "scripts": {

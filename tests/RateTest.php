@@ -2,10 +2,9 @@
 
 declare(strict_types=1);
 
-namespace OverSkillTeam\FinancialTools\Tests;
+namespace OverSkill\FinancialTools\Tests;
 
-use OverSkillTeam\FinancialTools\Rate;
-use Illuminate\Database\Eloquent\Model;
+use OverSkill\FinancialTools\Rate;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
@@ -88,20 +87,6 @@ class RateTest extends TestCase
         $this->assertNull($rate);
     }
 
-    #[Test]
-    public function it_should_cast_string_to_rate(): void
-    {
-        $this->markTestSkipped('must be revisited. This should be in RateCasterTest');
-        $fakeModel = new class extends Model
-        {
-            protected $casts = [
-                'rate' => \App\Utility\Core\Cast\RateCaster::class,
-            ];
-        };
-        /** @phpstan-ignore-next-line */
-        $fakeModel->rate = '0.075';
-        $this->assertEquals(0.075, $fakeModel->rate->toRate());
-    }
 
     public static function dataProvider(): array
     {

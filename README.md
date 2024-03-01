@@ -1,10 +1,13 @@
 # financial-tools
-Financial classes and utilities
+This repository will contain financial classes and utilities to modelize and calculate financial operations.
 
 
 ## How to test
 
+```bash
+composer phpstan
 ```
-% ./vendor/phpstan/phpstan/phpstan
-% ./vendor/phpunit/phpunit/phpunit  ./tests
+
+```bash
+composer test
 ```
